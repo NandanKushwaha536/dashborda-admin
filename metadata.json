@@ -1,0 +1,8 @@
+{
+  "name": "RGEnterprises Business Admin",
+  "description": "Production-ready Next.js commercial business admin panel for RGEnterprises with authoritative backend sync, cookie-based session auth, dedicated Developer Tools control center, and separated logistics control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

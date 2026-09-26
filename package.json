@@ -1,0 +1,39 @@
+{
+  "name": "rgenterprises-business-admin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000 -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -p 3000 -H 0.0.0.0",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/qa-admin.mjs && node scripts/qa-business-flows.mjs && node scripts/production-readiness.mjs",
+    "qa:admin": "node scripts/qa-admin.mjs",
+    "qa:flows": "node scripts/qa-business-flows.mjs",
+    "audit:readiness": "node scripts/production-readiness.mjs",
+    "validate:release": "node scripts/qa-admin.mjs && node scripts/qa-business-flows.mjs && node scripts/production-readiness.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tanstack/react-query": "^5.103.1",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "next": "15.5.25",
+    "postcss": "8.5.28",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.2.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  }
+}
